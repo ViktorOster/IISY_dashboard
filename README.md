@@ -1,5 +1,7 @@
 # IISY frontend dashboard prototype communicating with IISY API
 
+## API usage
+
 GET tickets: **/vi/api/tickets/**
 example JSON response:
 ```
