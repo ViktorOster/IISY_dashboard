@@ -1,6 +1,6 @@
-IISY frontend dashboard prototype communicating with IISY API
+#IISY frontend dashboard prototype communicating with IISY API
 
-GET tickets: /vi/api/tickets/
+GET tickets: **/vi/api/tickets/**
 example JSON response:
 ```
 [
@@ -25,9 +25,9 @@ example JSON response:
 ]
 ```
 
-GET entities: /v1/api/entity/
+GET entities: **/v1/api/entity/**
 example JSON response:
-
+```
 [
   {
     "id": 1,
@@ -54,10 +54,10 @@ example JSON response:
     "department": 2
   }
 ]
-
+```
 POST (add) ticket (entity id required in body of request): /v1/api/ticket/
 example POST request (using fetch):
-
+```
 fetch(baseUrl + "v1/api/ticket/", {
     headers: { "Content-Type": "application/json; charset=utf-8" },
     method: 'POST',
@@ -65,10 +65,10 @@ fetch(baseUrl + "v1/api/ticket/", {
         "entity": entityId
     })
 })
-
+```
 POST (add) entity (entity name and department id required in body of request): /v1/api/entity/
 example POST request (using fetch):
-
+```
 fetch(baseUrl + "v1/api/entity/", {
     headers: { "Content-Type": "application/json; charset=utf-8" },
     method: 'POST',
@@ -77,10 +77,10 @@ fetch(baseUrl + "v1/api/entity/", {
         "department": departmentId,
     })
 })
-
+```
 PUT (change) ticket status (ticket id and status number required in body of request): /v1/api/ticket/[ticket id here]
 example PUT request (using fetch):
-
+```
 fetch(baseUrl + "v1/api/ticket/" + ticketId, {
     headers: { "Content-Type": "application/json; charset=utf-8" },
     method: 'PUT',
@@ -89,7 +89,7 @@ fetch(baseUrl + "v1/api/ticket/" + ticketId, {
         "status": status,
     })
 })    
-
+```
 GET entity (entity id required in body of request): /v1/api/entity/[entity id here]
 (useful for getting all info about entity if you only have the id)
 
