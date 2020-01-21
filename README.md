@@ -2,6 +2,7 @@ IISY frontend dashboard prototype communicating with IISY API
 
 GET tickets: /vi/api/tickets/
 example JSON response:
+```
 [
   {
     "id": 1,
@@ -22,6 +23,7 @@ example JSON response:
     "entity": 4
   }
 ]
+```
 
 GET entities: /v1/api/entity/
 example JSON response:
