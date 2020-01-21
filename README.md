@@ -57,7 +57,7 @@ example JSON response:
   }
 ]
 ```
-POST (add) ticket (entity id required in body of request): /v1/api/ticket/
+POST (add) ticket (entity id required in body of request): **/v1/api/ticket/**
 example POST request (using fetch):
 ```
 fetch(baseUrl + "v1/api/ticket/", {
@@ -68,7 +68,7 @@ fetch(baseUrl + "v1/api/ticket/", {
     })
 })
 ```
-POST (add) entity (entity name and department id required in body of request): /v1/api/entity/
+POST (add) entity (entity name and department id required in body of request): **/v1/api/entity/**
 example POST request (using fetch):
 ```
 fetch(baseUrl + "v1/api/entity/", {
@@ -80,7 +80,7 @@ fetch(baseUrl + "v1/api/entity/", {
     })
 })
 ```
-PUT (change) ticket status (ticket id and status number required in body of request): /v1/api/ticket/[ticket id here]
+PUT (change) ticket status (ticket id and status number required in body of request): **/v1/api/ticket/[ticket id here]/**
 example PUT request (using fetch):
 ```
 fetch(baseUrl + "v1/api/ticket/" + ticketId, {
@@ -92,9 +92,9 @@ fetch(baseUrl + "v1/api/ticket/" + ticketId, {
     })
 })    
 ```
-GET entity (entity id required in body of request): /v1/api/entity/[entity id here]
+GET entity (entity id required in body of request): **/v1/api/entity/[entity id here]/**
 (useful for getting all info about entity if you only have the id)
 
-GET department (department id required in body of request): /v1/api/department/[department id here]
+GET department (department id required in body of request): **/v1/api/department/[department id here]/**
 (useful for getting all info about department if you only have the id)
 
